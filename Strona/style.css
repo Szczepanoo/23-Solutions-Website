@@ -36,7 +36,6 @@ body {
     text-align: center;
     line-height: 54px;
     text-decoration: none;
-    font-style: bold;
     width: 127px;
     height: 60px;
     font-size: 20px;
@@ -76,6 +75,12 @@ body {
     border-radius: 50%;
     margin-bottom: 20px;
     display: flex;
+    scroll-behavior: smooth;
+}
+
+.scroll_down_btn:hover {
+    background-image: url(images/scroll_down_btn_hover.svg);
+    cursor: pointer;
 }
 
 .content {
