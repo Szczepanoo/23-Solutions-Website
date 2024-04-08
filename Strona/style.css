@@ -1,0 +1,150 @@
+html {
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    width: 100%;
+    background-color: #FFF;
+    height: 110px;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 8%;
+}
+
+.topnav {
+    background-color: #FFF;
+    overflow: hidden;
+    height: 60px;
+    margin-left: auto;
+}
+  
+.topnav a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    line-height: 54px;
+    text-decoration: none;
+    font-style: bold;
+    width: 127px;
+    height: 60px;
+    font-size: 20px;
+    border: solid 3px #0b5917;
+    margin-right: 50px;
+    box-sizing: border-box;
+}
+  
+
+.topnav a:hover {
+    background-color: #0b5917;
+    color: #FFF;
+}
+
+
+.hero_long {
+    background-color: rgb(0, 200, 0);
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+
+.hero_short {
+    background-color: rgb(0, 200, 0);
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+
+.scroll_down_btn {
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background-image: url(scroll_down_btn.svg);
+    background-size: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.content {
+    background-color: #EEE;
+    width: 100%;
+    height: 1000px;
+}
+
+/*qweqwe*/
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: solid 3px #0b5917;
+    overflow: hidden;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #0b5917;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #0b5917;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    float: right;
+
+}
+
+.accept-regulations input[type="checkbox"] {
+    margin: 0%;
+}
+
+button:hover {
+    background-color: #0b3517;
+}
+
+.accept-regulations {
+    float: left;
+}
+
+.regulamin {
+    text-decoration: underline;
+    color: #000;
+}
+
+.regulamin:visited {
+    color: #000;
+}
+
+.footer{
+    width: 100%;
+    height: 110px;
+    background-color: #0b5917;
+    margin-top: auto;
+}
