@@ -18,19 +18,20 @@
             <a href="index.html">Home</a>
             <a href="#">O nas</a>
             <a href="#">Szkolenia</a>
-            <a href="kontakt.html">Kontakt</a>
+            <a href="kontakt.html" class="active_page">Kontakt</a>
             <a href="#">Logowanie</a>
         </nav>
     </header>
 
     <section class="hero_short">
         <h1>Masz pytania?</h1>
+
     </section>
 
-    <h2>Skontaktuj się z nami</h2>
 
-    <section class="container">
 
+    <section class="form">
+        <h2>Skontaktuj się z nami</h2>
         <form action="#" method="POST">
             <input type="text" id="name" name="name" required placeholder="Imię">
 
@@ -58,6 +59,13 @@
             <img src="images/logo.jpeg" alt="Logo firmy 23 solutions" width="80px" height="80px">
         </div>
     </footer>
+
+    <script>
+        function scrollToDiv(divId) {
+            var targetDiv = document.getElementById(divId);
+            targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    </script>
 
 </body>
 </html>

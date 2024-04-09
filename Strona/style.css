@@ -29,7 +29,8 @@ body {
     height: 60px;
     margin-left: auto;
 }
-  
+
+
 .topnav a {
     display: inline-block;
     color: #000;
@@ -49,7 +50,18 @@ body {
 .topnav a:hover {
     background-color: #0b5917;
     color: #FFF;
+    border: solid 3px black;
+    -webkit-text-stroke-width: 0;
 }
+
+.active_page {
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #0b5917;
+}
+
+
+
 
 
 .hero_long {
@@ -72,6 +84,7 @@ body {
     margin-top: 110px;
     background-size: cover;
     background-position: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -85,7 +98,7 @@ h1 {
 
 h2 {
     margin-top: 2%;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: normal;
     text-align: center;
 }
@@ -131,8 +144,8 @@ h2 {
 
 
 /*FORMULARZ*/
-.container {
-    max-width: 400px;
+.form {
+    max-width: 600px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
@@ -164,7 +177,7 @@ input[type="file"]:hover {
 textarea {
     resize: vertical;
     min-height: 60px;
-    max-height: 300px;
+    max-height: 200px;
 }
 
 button {
