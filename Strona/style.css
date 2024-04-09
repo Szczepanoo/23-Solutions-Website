@@ -60,6 +60,7 @@ body {
     display: flex;
     background-size: cover;
     background-position: center;
+    flex-direction: column;
 }
 
 
@@ -73,6 +74,23 @@ body {
     background-position: center;
 }
 
+h1 {
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: #0b5917;
+    font-size: 110px;
+    display: flex;
+    margin: auto;
+}
+
+h2 {
+    margin-top: 2%;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
 .scroll_down_btn {
     margin: auto;
     width: 60px;
@@ -83,6 +101,7 @@ body {
     margin-bottom: 20px;
     display: flex;
     scroll-behavior: smooth;
+	transition: all 0.5s ease;
 }
 
 .scroll_down_btn:hover {
