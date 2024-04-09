@@ -24,15 +24,15 @@
     </header>
 
     <section class="hero_long">
-        <div class="scroll_down_btn" onclick="scrollToDiv('content')"></div>
+        <div class="scroll_down_btn" id="scroll_down_btn" onclick="scrollToDiv('scroll_down_btn')"></div>
     </section>
-    <div class="content" id="content"></div>
+    <div class="content"></div>
 
 
     <script>
         function scrollToDiv(divId) {
             var targetDiv = document.getElementById(divId);
-            targetDiv.scrollIntoView({ behavior: 'smooth' });
+            targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     </script>
 

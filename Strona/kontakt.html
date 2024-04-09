@@ -27,17 +27,17 @@
     </section>
     <section class="container">
         <form action="#" method="POST">
-            <label for="name">Imię:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="surname">Nazwisko:</label>
-            <input type="text" id="surname" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Wiadomość:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="text" id="name" name="name" required placeholder="Imię">
+
+            <input type="text" id="surname" name="name" required placeholder="Nazwisko">
+
+            <input type="email" id="email" name="email" required placeholder="E-mail">
+
+            <input type="tel" id="tel" name="tel" required placeholder="Telefon" pattern="[0-9]{9}">
+
+            <input type="file" id="attachment" name="attachment">
+
+            <textarea id="message" name="message" rows="4" required placeholder="Wiadomość" maxlength="600"></textarea>
 
             <div class="accept-regulations">
                 <input type="checkbox" id="accept" name="accept" required>
@@ -49,8 +49,8 @@
         </form>
     </section>
     <footer class="footer">
-        <div class="logo">
-            <img src="images/logo.jpeg" alt="Logo firmy 23 solutions" width="100px" height="100px">
+        <div class="logo_footer">
+            <img src="images/logo.jpeg" alt="Logo firmy 23 solutions" width="80px" height="80px">
         </div>
     </footer>
 
