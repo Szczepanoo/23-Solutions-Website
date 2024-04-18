@@ -15,7 +15,7 @@
         <div class="logo">
             <img src="images/logo.jpeg" alt="Logo firmy 23 solutions" width="100px" height="100px">
         </div>
-        <nav class="topnav">
+        <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active_page">Home</a>
             <a href="onas.html" class="topnav_a">O nas</a>
             <a href="szkolenia.html" class="topnav_a">Szkolenia</a>
@@ -37,11 +37,20 @@
 
 
     <div class="home_container">
-        <div class="home_container_item"></div>
+        <div class="home_container_item">
+            <h3>Szkolenie 1</h3>
+            <button class="home_wiecej">Więcej</button>
+        </div>
 
-        <div class="home_container_item"></div>
+        <div class="home_container_item">
+            <h3>Szkolenie 2</h3>
+            <button class="home_wiecej">Więcej</button>
+        </div>
 
-        <div class="home_container_item"></div>
+        <div class="home_container_item">
+            <h3>Polecane szkolenie 3</h3>
+            <button class="home_wiecej">Więcej</button>
+        </div>
     </div>
 
     <div class="p2">
@@ -97,6 +106,16 @@
         function scrollToDiv(divId) {
             var targetDiv = document.getElementById(divId);
             targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+
+        function showMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     </script>
 
