@@ -6,11 +6,11 @@ body {
     padding: 0;
     margin: 0;
 
-    /* DO TESTU
-    background-image: url('dubai.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-     */
+    /*DO TESTU */
+    /*background-image: url('dubai.jpg');*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+
 
 }
 
@@ -24,6 +24,8 @@ body {
     left: 0;
     display: grid;
     grid-template-columns: 20% 80%;
+    grid-template-rows: 99% 1%;
+    border-bottom: 3px solid #0b5917;
 }
 
 .logo {
@@ -40,8 +42,13 @@ body {
     column-gap: 50px;
 }
 
+.responsive_topnav{
+    height: 0;
+}
 
-.topnav_a {
+
+.topnav_a, .hamburger{
+    background-color: #FFFFFF;
     display: grid;
     color: #000;
     width: 127px;
@@ -53,9 +60,17 @@ body {
     text-decoration: none;
     place-items: center;
 }
-  
 
-.topnav_a:hover {
+.hamburger {
+    display: none;
+    font-size: 40px;
+}
+
+.responsive_topnav {
+    display: none;
+}
+
+.topnav_a:hover, .hamburger:hover{
     background-color: #CECECE;
 }
 
@@ -76,10 +91,6 @@ body {
 .active_page:hover {
     background-color: #0b3517;
     color: #CECECE;
-}
-
-.hamburger{
-    display: none;
 }
 
 
@@ -478,6 +489,12 @@ footer .newsletter form {
   footer .info > .copyright {
     margin-top: 10px;
   }
+
+  .p2 {
+      grid-template-columns: 100%;
+      grid-template-rows: 85% 15%;
+  }
+
 }
 
 @media screen and (max-width: 380px) {
@@ -494,6 +511,17 @@ footer .newsletter form {
     margin: 0;
     text-align: center;
   }
+
+}
+
+@media screen and (max-width: 450px){
+
+  .p2 {
+      grid-template-columns: 100%;
+      grid-template-rows: 90% 10%;
+  }
+
+
 }
 
 
@@ -503,6 +531,38 @@ footer .newsletter form {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         row-gap: 20px;
+    }
 
-}
+    .topnav{
+        display: none;
+    }
+
+    .hamburger {
+        display: grid;
+        margin: auto;
+    }
+
+    .responsive_topnav {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        row-gap: 20px;
+        place-items: center;
+        background-color: #FFFFFF;
+        position: fixed;
+        margin-top: 110px;
+        margin-left: 30%;
+        width: 300px;
+        height: 550px;
+        border-top: 3px solid #FFFFFF;
+        border-bottom: 3px solid #0b5917;
+        border-left: 3px solid #0b5917;
+        border-right: 3px solid #0b5917;
+    }
+
+    .topnav_a, .active_page{
+        height: 90px;
+        width: 190px;
+        font-size: 30px;
+    }
+
 }

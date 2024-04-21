@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>23 Solutions</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -15,7 +15,8 @@
         <div class="logo">
             <img src="images/logo.jpeg" alt="Logo firmy 23 solutions" width="100px" height="100px">
         </div>
-        <nav class="topnav">
+        <a href="javascript:void(0);" class="hamburger" id="hamburger" onclick=showMenu("myTopnav")><i class="fa fa-bars"></i></a>
+        <nav class="topnav" id="myTopnav">
             <a href="index.html" class="topnav_a">Home</a>
             <a href="onas.html" class="topnav_a">O nas</a>
             <a href="szkolenia.html" class="topnav_a">Szkolenia</a>
@@ -25,7 +26,7 @@
     </header>
 
     <section class="hero_short">
-        <h1>Masz pytania?</h1>
+        <h1>Logowanie</h1>
 
     </section>
 
@@ -70,12 +71,8 @@
       </div>
     </footer>
 
-    <script>
-        function scrollToDiv(divId) {
-            var targetDiv = document.getElementById(divId);
-            targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    </script>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
