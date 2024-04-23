@@ -119,10 +119,11 @@ body {
 }
 
 h1 {
+    text-align: center;
     -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 0.365vw;
+    -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: #0b5917;
-    font-size: 6.7vw;
+    font-size: 100px;
     font-weight: bold;
     display: flex;
     margin: auto;
