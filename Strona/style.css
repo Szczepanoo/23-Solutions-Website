@@ -263,6 +263,7 @@ h2 {
     grid-template-rows: 20% 80%;
     grid-template-columns: 30% 70%;
     row-gap: 15px;
+    column-gap: 10px;
     border: 3px solid #0b5917;
     padding: 15px;
 
