@@ -587,23 +587,31 @@ footer .newsletter form {
     .hamburger {
         display: grid;
         margin: auto;
+        grid-column: 3;
+
     }
 
+    .header{
+        grid-template-columns: 30% 40% 30%;
+    }
+
+
     .responsive_topnav {
+        grid-column: 2;
         display: grid;
+        margin-top: 110px;
         grid-template-rows: repeat(5, 1fr);
         row-gap: 20px;
         place-items: center;
         background-color: #FFFFFF;
         position: fixed;
-        margin-top: 110px;
-        margin-left: 30%;
-        width: 300px;
+        width: 40vw;
         height: 550px;
         border-top: 3px solid #FFFFFF;
         border-bottom: 3px solid #0b5917;
         border-left: 3px solid #0b5917;
         border-right: 3px solid #0b5917;
+        padding-bottom: 20px;
     }
 
     .topnav_a, .active_page{
