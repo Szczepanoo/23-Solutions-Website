@@ -653,7 +653,7 @@ footer .newsletter form {
 
 
     .responsive_topnav {
-        grid-column: 2;
+        grid-column: 1 / span 3;
         display: grid;
         margin-top: 110px;
         grid-template-rows: repeat(5, 1fr);
@@ -661,11 +661,11 @@ footer .newsletter form {
         place-items: center;
         background-color: #FFFFFF;
         position: fixed;
-        width: 40vw;
+        width: 100vw;
         height: 550px;
         border-top: 3px solid #FFFFFF;
         border-bottom: 3px solid #0b5917;
-        border-left: 3px solid #0b5917;
+        border-left: 3px solid #FFFFFF;
         border-right: 3px solid #0b5917;
         padding-bottom: 20px;
     }
