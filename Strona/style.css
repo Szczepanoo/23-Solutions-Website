@@ -168,33 +168,47 @@ h2 {
 
 .home_container{
     display: grid;
-    grid-template-columns: 5% repeat(3, 1fr) 5%;
+    grid-template-columns: repeat(3, 1fr);
     width: 80%;
     margin: auto;
     margin-top: 60px;
     margin-bottom: 60px;
 }
 
-.left_arror{
+.left_arror {
+    display: none;
     background-image: url(images/left_arrow.svg);
     height: 60px;
     width: 60px;
     margin: auto;
     border-radius: 50%;
-    grid-column: 1;
     background-size: cover;
+    grid-column: 1;
 }
 
-.right_arrow {
+.right_arrow{
+    display: none;
     background-image: url(images/right_arrow.svg);
     height: 60px;
     width: 60px;
     margin: auto;
     border-radius: 50%;
-    grid-column: 5;
     background-size: cover;
+    grid-column: 5;
 }
 
+
+.left_arror:hover{
+    cursor: pointer;
+    background-image: url(images/left_arrow_hover.svg);
+    border: 3px solid #0b5917;
+}
+
+.right_arrow:hover{
+    background-image: url(images/right_arrow_hover.svg);
+    cursor: pointer;
+    border: 3px solid #0b5917;
+}
 
 .home_container_item{
     background-position: center;
