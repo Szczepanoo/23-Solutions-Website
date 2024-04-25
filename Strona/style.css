@@ -250,15 +250,17 @@ h2 {
 .osoby{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    width: 50vw;
+    width: 50%;
     row-gap: 30px;
     margin: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    height: auto;
 
 }
 
 .osoba {
+    height: auto;
     display: grid;
     grid-template-rows: 20% 80%;
     grid-template-columns: 30% 70%;
@@ -293,6 +295,7 @@ h2 {
     font-size: 18px;
     grid-row: 2;
     grid-column: 2;
+    height: auto;
 }
 
 
@@ -675,5 +678,36 @@ footer .newsletter form {
         width: 38vw;
         font-size: 30px;
     }
+
+    .p1 {
+        text-align: center;
+    }
+
+    .osoba {
+        grid-template-rows: 160px 10% 40%;
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+
+    .osoba_img{
+
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .osoba h3 {
+        text-align: center;
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    .osoba_opis {
+        text-align: center;
+        grid-row: 3;
+        grid-column: 1 / span 2;
+        padding: 10px;
+    }
+
 
 }
