@@ -238,7 +238,7 @@ h2 {
     height: 60px;
     width: 127px;
     border: none;
-    margin-left: 150px;
+    margin: auto;
 }
 
 .home_wiecej:hover {
@@ -484,16 +484,14 @@ footer li {
 }
 
 footer input {
-  position: relative;
   height: 100%;
 }
 
 footer input[type="email"] {
     margin-bottom: 0;
     height: 20px;
-  padding: 7px 8px;
-  border: 1px solid #000000;
-    /*background-color: red;*/
+    padding: 7px 8px;
+    border: 1px solid #000000;
 }
 
 footer input[type="email"]:focus {
@@ -553,7 +551,6 @@ footer .social {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 footer .social i {
@@ -715,6 +712,10 @@ footer .newsletter form {
     }
 
     .p1 {
+        text-align: center;
+    }
+
+    .p2_text{
         text-align: center;
     }
 
