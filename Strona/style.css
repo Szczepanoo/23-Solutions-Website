@@ -1,17 +1,10 @@
-html {
+* {
     font-family: "Noto Sans", sans-serif; !important;
 }
 
 body {
     padding: 0;
     margin: 0;
-
-    /*DO TESTU */
-    /*background-image: url('dubai.jpg');*/
-    /*background-size: cover;*/
-    /*background-attachment: fixed;*/
-
-
 }
 
 .header{
@@ -351,7 +344,7 @@ h2 {
 
 .szkolenie button{
     font-size: 20px;
-    height: 60px;
+    height: 70px;
     width: 50%;
     margin: auto;
     background-color: #0b5917;
@@ -460,11 +453,11 @@ h2 {
 /* LOGOWANIE */
 
 .login_form{
-
     margin: 40px auto;
     display: grid;
     width: 40%;
     border: 3px solid #0b5917;
+    padding-bottom: 15px;
 }
 
 .login_form form{
@@ -509,10 +502,19 @@ h2 {
 
 
 .login_form .link1{
+    text-decoration: none;
+    text-align: center;
     grid-column: 1;
     grid-row: 4;
     margin: auto;
     color: black;
+}
+
+.login_form .link1:hover{
+    border: 2px solid #0b5917;
+    transition: all 0.5s ease;
+    text-decoration: underline;
+    padding: 5px;
 }
 
 .login_form .link1:visited{
@@ -521,6 +523,8 @@ h2 {
 
 
 .login_form .link2{
+    text-decoration: none;
+    text-align: center;
     grid-column: 2;
     grid-row: 4;
     margin: auto;
@@ -531,6 +535,12 @@ h2 {
     color: black;
 }
 
+.login_form .link2:hover{
+    border: 2px solid #0b5917;
+    transition: all 0.5s ease;
+    text-decoration: underline;
+    padding: 5px;
+}
 
 
 /*FOOTER*/
@@ -718,14 +728,25 @@ footer .newsletter form {
 }
 
 @media screen and (max-width: 450px){
-
-  .p2 {
-      grid-template-columns: 100%;
-      grid-template-rows: 90% 10%;
-  }
+    .p2 {
+        grid-template-columns: 100%;
+        grid-template-rows: 90% 10%;
+    }
 
 
 }
+
+@media screen and (max-width: 600px){
+    .login_form {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 16vw;
+        -webkit-text-stroke-width: 3px;
+    }
+}
+
 
 
 @media screen and (max-width: 1227px){
@@ -831,5 +852,15 @@ footer .newsletter form {
         padding: 10px;
     }
 
+
+    .szkolenia button{
+        height: 100%;
+        width: 100%;
+        font-size: 3vw;
+    }
+
+    .szkolenie h3{
+        font-size: 8vw;
+    }
 
 }
