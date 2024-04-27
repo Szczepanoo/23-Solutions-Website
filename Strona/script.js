@@ -18,6 +18,30 @@ function showMenu() {
 
 }
 
+function moveItem(direction) {
+    var items = document.querySelectorAll('.home_container_item');
+    var currentItem = document.querySelector('.home_container_item.visible');
+    var currentIndex = Array.from(items).indexOf(currentItem);
+
+    // Ukryj aktualnie widoczny element
+    currentItem.classList.remove('visible');
+
+    // Przesuń się w lewo
+    if (direction === 'left') {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+    }
+    // Przesuń się w prawo
+    else if (direction === 'right') {
+        currentIndex = (currentIndex + 1) % items.length;
+    }
+
+    // Pokaż następny element
+    items[currentIndex].classList.add('visible');
+}
+
+
+
+
 
 window.addEventListener('resize', function() {
 var szerokoscEkranu = window.innerWidth;

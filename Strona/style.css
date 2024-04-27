@@ -663,12 +663,32 @@ footer .newsletter form {
 }
 
 
-/* Bloki polecanych szkoleń main */
 @media screen and (max-width: 1227px){
+
     .home_container{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        row-gap: 20px;
+        margin: auto;
+        grid-template-columns: 1fr 306px 1fr;
+        grid-template-rows: 100%;
+    }
+
+    .left_arror{
+        display: grid;
+        grid-column: 1;
+    }
+
+    .right_arrow{
+        display: grid;
+        grid-column: 3;
+    }
+
+
+    .home_container_item{
+        display: none;
+    }
+
+    .visible{
+        grid-column: 2;
+        display: grid;
     }
 
     .topnav{
