@@ -620,6 +620,10 @@ footer .info .legal > a {
     margin-right: 15px;
 }
 
+.footer_hr {
+    width: 90%;
+    border: 1px solid #FFFFFF;
+}
 
 footer .social {
     padding: 1.5rem 0;
@@ -634,17 +638,10 @@ footer .social i {
     cursor: pointer;
 }
 
-footer .social:before {
-    position: absolute;
-    content: "";
-    width: 90%;
-    height: 1px;
-    background: #FFFFFF;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+footer .social i:hover{
+    color: #CECECE;
+    transition: all 0.5s ease;
 }
-
 
 footer .top {
     padding: 2rem 0;
@@ -745,6 +742,7 @@ footer .newsletter form {
         height: 90px;
         width: 38vw;
         font-size: 30px;
+        min-width: 165px;
     }
 
     .p1 {
@@ -784,13 +782,26 @@ footer .newsletter form {
 
 
     .szkolenia button{
-        height: 100%;
-        width: 100%;
-        font-size: 3vw;
+        display: none;
     }
 
     .szkolenie h3{
         font-size: 8vw;
+        grid-column: 1 / span 2;
+    }
+
+    .szkolenie:hover{
+        cursor: pointer;
+        box-sizing: border-box;
+        border: 7px solid #0b5917;
+        transition: all 0.5s ease;
+    }
+    
+    
+
+    .login_form .link1:hover, .login_form .link2:hover{
+        border: none;
+        padding: 0;
     }
 
 }
@@ -848,6 +859,14 @@ footer .newsletter form {
     .hamburger{
         grid-column: 2 / span 3;
         margin: auto;
+    }
+
+    .osoby{
+        width: 90%;
+    }
+
+    .form{
+        width: 90%;
     }
 
 }
