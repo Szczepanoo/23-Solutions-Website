@@ -1,5 +1,5 @@
 * {
-    font-family: "Noto Sans", sans-serif; !important;
+    font-family: "Open Sans", sans-serif; !important;
 }
 
 body {
@@ -190,11 +190,12 @@ h2 {
     border: 3px solid #0b5917;
     margin: auto;
     display: grid;
+    padding: 15px;
     grid-template-rows: 75% 25%;
 }
 
 .home_container_item h3 {
-    font-size: 50px;
+    font-size: 45px;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #0b5917;
