@@ -3,6 +3,10 @@ function scrollToDiv(divId) {
             targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
+function goto(url) {
+    window.location.href = url;
+}
+
 
 function showMenu() {
     var topnav = document.getElementById("myTopnav");
@@ -17,6 +21,7 @@ function showMenu() {
     }
 
 }
+
 
 function moveItem(direction) {
     var items = document.querySelectorAll('.home_container_item');
@@ -38,9 +43,6 @@ function moveItem(direction) {
     // Pokaż następny element
     items[currentIndex].classList.add('visible');
 }
-
-
-
 
 
 window.addEventListener('resize', function() {

@@ -481,8 +481,7 @@ h2 {
 
 .login_form .link1:hover{
     border: 2px solid #0b5917;
-    transition: all 0.5s ease;
-    text-decoration: underline;
+    transition: all 0.1s ease;
     padding: 5px;
 }
 
@@ -506,8 +505,7 @@ h2 {
 
 .login_form .link2:hover{
     border: 2px solid #0b5917;
-    transition: all 0.5s ease;
-    text-decoration: underline;
+    transition: all 0.1s ease;
     padding: 5px;
 }
 
@@ -750,11 +748,6 @@ footer .newsletter form {
         padding: 10px;
     }
 
-    .szkolenie h3{
-        font-size: 8vw;
-        grid-column: 1 / span 2;
-    }
-
     .szkolenie:hover{
         cursor: pointer;
         box-sizing: border-box;
@@ -777,6 +770,9 @@ footer .newsletter form {
         width: 90%;
     }
 
+    .szkolenie h3{
+        font-size: 8vw;
+    }
 
     footer .top {
         flex-direction: column;
