@@ -167,8 +167,8 @@ h2 {
 .left_arrow {
     display: none;
     background-image: url(images/left_arrow.svg);
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     margin: auto;
     border-radius: 50%;
     background-size: cover;
@@ -178,8 +178,8 @@ h2 {
 .right_arrow{
     display: none;
     background-image: url(images/right_arrow.svg);
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     margin: auto;
     border-radius: 50%;
     background-size: cover;
@@ -191,12 +191,14 @@ h2 {
     cursor: pointer;
     background-image: url(images/left_arrow_hover.svg);
     border: 3px solid #0b5917;
+    box-sizing: border-box;
 }
 
 .right_arrow:hover{
-    background-image: url(images/right_arrow_hover.svg);
     cursor: pointer;
+    background-image: url(images/right_arrow_hover.svg);
     border: 3px solid #0b5917;
+    box-sizing: border-box;
 }
 
 .home_container_item{
@@ -679,9 +681,10 @@ footer .newsletter form {
 @media screen and (max-width: 1227px){
 
     .home_container{
-        margin: 0;
+        width: 60%;
         grid-template-columns: 1fr 306px 1fr;
         grid-template-rows: 100%;
+        margin: auto;
     }
 
     .left_arrow{
@@ -807,6 +810,12 @@ footer .newsletter form {
 }
 
 @media screen and (max-width: 828px) {
+
+    .home_container{
+        width: 90%;
+    }
+
+
     footer .top {
         flex-direction: column;
     }
@@ -819,6 +828,22 @@ footer .newsletter form {
 }
 
 @media screen and (max-width: 600px) {
+
+    .home_container_item{
+        width: 250px;
+        height: 250px;
+    }
+
+    .home_container_item h3{
+        font-size: 41px;
+    }
+
+    .home_container{
+        grid-template-columns: 1fr 256px 1fr;
+        width: 100%;
+    }
+
+
     footer .top .pages {
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -848,6 +873,16 @@ footer .newsletter form {
 
 }
 
+@media screen and (max-width: 480px){
+    .left_arrow{
+        width: 45px;
+        height: 45px;
+    }
+    .right_arrow{
+        width: 45px;
+        height: 45px;
+    }
+}
 
 
 @media screen and (max-width: 450px){
