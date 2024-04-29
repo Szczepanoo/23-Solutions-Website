@@ -70,6 +70,7 @@ body {
 
 .hero_long {
     background-image: url("images/hero_long.jpg");
+    background-attachment: fixed;
     width: 100%;
     height: 690px;
     margin-top: 110px;
@@ -81,6 +82,7 @@ body {
 
 
 .hero_short {
+    background-attachment: fixed;
     width: 100%;
     height: 600px;
     display: flex;
@@ -341,6 +343,7 @@ h2 {
 
 /* KONTAKT */
 .form {
+    width: 40%;
     max-width: 600px;
     margin: 50px auto;
     background-color: #fff;
@@ -770,6 +773,10 @@ footer .newsletter form {
         width: 90%;
     }
 
+    .form{
+        width: 80%;
+    }
+
     .szkolenie h3{
         font-size: 8vw;
     }
@@ -816,13 +823,16 @@ footer .newsletter form {
     }
 
     .p2 {
+        margin-top: 45px;
         grid-template-columns: 100%;
         grid-template-rows: 85% 15%;
+        padding-bottom: 50px;
     }
 
     .login_form {
         width: 80%;
     }
+
 
     h1 {
         font-size: 16vw;
@@ -850,10 +860,6 @@ footer .newsletter form {
     }
 
     .osoby{
-        width: 90%;
-    }
-
-    .form{
         width: 90%;
     }
 
