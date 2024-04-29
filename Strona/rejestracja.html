@@ -26,23 +26,29 @@
     </header>
 
     <section class="hero_short" style="background-image: url('images/hero_logowanie.jpg')">
-        <h1>Logowanie</h1>
+        <h1>Dołącz do nas</h1>
     </section>
 
 
-    <section class="login_form">
-        <h2>Zaloguj się</h2>
+    <section class="signup_form">
+        <h2>Zarejestruj się</h2>
         <form action="#" method="POST">
+            <input type="text" id="name" name="name" required placeholder="Imię">
+
+            <input type="text" id="surname" name="name" required placeholder="Nazwisko">
+
+            <input type="tel" id="tel" name="tel" required placeholder="Telefon" pattern="[0-9]{9}">
+
             <input type="email" id="email" name="email" required placeholder="E-mail">
 
             <input type="password" id="pas" name="pas" required placeholder="Hasło">
 
+            <input type="password" id="repas" name="repas" required placeholder="Powtórz hasło">
 
             <button type="submit">Wejdź</button>
 
 
-            <a class="link1" href="#nie_pamietasz_hasla">Nie pamiętasz hasła?</a>
-            <a class="link2" href="rejestracja.html">Nie masz konta?</a>
+            <a class="link" href="logowanie.html">Masz już konto?</a>
 
         </form>
     </section>

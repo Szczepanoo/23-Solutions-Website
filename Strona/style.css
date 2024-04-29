@@ -513,7 +513,72 @@ h2 {
 }
 
 
-/*FOOTER*/
+/* REJESTRACJA */
+
+.signup_form {
+    margin: 40px auto;
+    display: grid;
+    width: 40%;
+    border: 3px solid #0b5917;
+    padding-bottom: 15px;
+}
+
+.signup_form form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 1fr);
+    width: 80%;
+    margin: auto;
+    row-gap: 30px;
+}
+
+.signup_form input[type="text"],
+.signup_form input[type="tel"],
+.signup_form input[type="email"],
+.signup_form input[type="password"]{
+
+    font-size: 24px;
+    border: 1px solid #0b5917;
+    grid-column: 1;
+}
+
+.signup_form button{
+    height: 40px;
+    font-size: 24px;
+    background-color: #0b5917;
+    border: none;
+    color: #FFFFFF;
+    grid-column: 1;
+}
+
+.signup_form button:hover{
+    cursor: pointer;
+    background-color: #0b3517;
+    transition: all 0.5s ease;
+}
+
+
+
+.signup_form .link{
+    text-decoration: none;
+    text-align: center;
+    grid-column: 1;
+    margin: auto;
+    color: black;
+}
+
+.signup_form .link:hover{
+    border: 2px solid #0b5917;
+    transition: all 0.1s ease;
+    padding: 5px;
+}
+
+
+
+
+
+
+/* FOOTER */
 footer a {
   color: #FFFFFF;
   text-decoration: none;
