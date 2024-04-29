@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>23 Solutions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="images/logo.jpeg" alt="Logo firmy 23 solutions" width="100px" height="100px">
+            <img src="../static/images/logo.jpeg" alt="Logo firmy 23 solutions" width="100px" height="100px">
         </div>
         <a href="javascript:void(0);" class="hamburger" onclick=showMenu("myTopnav")><i id="hamburger" class="fa fa-bars"></i></a>
         <nav class="topnav" id="myTopnav">
@@ -25,34 +25,46 @@
         </nav>
     </header>
 
-    <section class="hero_short" style="background-image: url('images/hero_kontakt.jpg')">
-        <h1>Masz pytania?</h1>
+    <section class="hero_short" style="background-image: url('../static/images/hero_logowanie.jpg')">
+        <h1>Dołącz do nas</h1>
     </section>
 
-    <section class="form">
-        <h2>Skontaktuj się z nami</h2>
-        <form action="#" method="POST">
+
+    <section class="signup_form">
+        <h2>Zarejestruj się</h2>
+        <form action="/register" method="POST">
             <input type="text" id="name" name="name" required placeholder="Imię">
 
             <input type="text" id="surname" name="name" required placeholder="Nazwisko">
 
-            <input type="email" id="email" name="email" required placeholder="E-mail">
-
             <input type="tel" id="tel" name="tel" required placeholder="Telefon" pattern="[0-9]{9}">
 
-            <input type="file" id="attachment" name="attachment">
+            <input type="email" id="email" name="email" required placeholder="E-mail">
 
-            <textarea id="message" name="message" rows="4" required placeholder="Wiadomość" maxlength="600"></textarea>
+            <input type="password" id="pas" name="pas" required placeholder="Hasło">
+
+            <input type="password" id="repas" name="repas" required placeholder="Powtórz hasło">
 
             <div class="accept-regulations">
-                <input type="checkbox" id="accept" name="accept" required>
-                <label>Akceptuję <a class="regulamin" href="#regulamin">regulamin</a></label>
-            </div>
+                <div class="acc_regulamin">
+                    <input type="checkbox" id="accept" name="accept" required>
+                    <label>Akceptuję <a class="regulamin" href="#regulamin">regulamin</a></label>
+                </div>
 
-            <button type="submit">Wyślij</button>
+                <div class="acc_newsletter">
+                    <input type="checkbox" id="sign_for_newsletter" name="sign_for_newsletter">
+                    <label>Zapisz się na newsletter</label>
+                </div>
+
+            </div>
+            <button type="submit">Wejdź</button>
+
+
+            <a class="link" href="logowanie.html">Masz już konto?</a>
 
         </form>
     </section>
+
 
 
     <footer>
@@ -98,7 +110,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 
 </body>
 </html>
