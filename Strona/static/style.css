@@ -442,7 +442,9 @@ h2 {
 /* LOGOWANIE */
 
 .login_form{
-    margin: 40px auto;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 40px;
     display: grid;
     width: 40%;
     border: 3px solid #0b5917;
@@ -536,7 +538,7 @@ h2 {
 /* REJESTRACJA */
 
 .signup_form {
-    margin: 10px auto;
+    margin: 40px auto;
     display: grid;
     width: 40%;
     border: 3px solid #0b5917;
@@ -546,7 +548,7 @@ h2 {
 .signup_form form{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0px 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0 1fr 1fr 1fr;
     width: 80%;
     margin: auto;
     row-gap: 30px;
@@ -556,7 +558,7 @@ h2 {
 .signup_form input[type="tel"],
 .signup_form input[type="email"],
 .signup_form input[type="password"]{
-    font-size: 24px;
+    font-size: 18px;
     border: 1px solid #0b5917;
     grid-column: 1;
 }
@@ -570,7 +572,7 @@ h2 {
 .error_label{
     display: grid;
     height: 20px;
-    font-size: 0px;
+    font-size: 0;
     color: #F62020;
     text-align: center;
     top: -10px;
