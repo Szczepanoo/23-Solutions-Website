@@ -16,13 +16,33 @@ cursor = conn.cursor()
 @app.route('/')
 def render_index():
     return render_template('index.html')
+
+@app.route('/onas')
+def render_onas():
+    return render_template('onas.html')
+
+@app.route('/szkolenia')
+def render_szkolenia():
+    return render_template('szkolenia.html')
+
+@app.route('/kontakt')
+def render_kontakt():
+    return render_template('kontakt.html')
+
 @app.route('/logowanie')
 def render_logowanie():
     return render_template('logowanie.html')
 
+@app.route('/szkolenie')
+def render_szkolenie():
+    return render_template('szkolenie.html')
+
+
 @app.route('/rejestracja')
 def render_rejestracja():
     return render_template('rejestracja.html')
+
+
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -41,7 +61,7 @@ def register():
                    (name, surname,  email, tel, h_pas, sign_for_newsletter))
     conn.commit()
 
-    return render_template('logowanie.html')
+    return render_template('logowanie.html',login_label = "Konto zostało utworzone")
 
 if __name__ == '__main__':
     app.run(debug=True)

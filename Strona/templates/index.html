@@ -17,10 +17,10 @@
         </div>
         <a href="javascript:void(0);" class="hamburger" onclick=showMenu("myTopnav")><i id="hamburger" class="fa fa-bars"></i></a>
         <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="topnav_a">Home</a>
-            <a href="onas.html" class="topnav_a">O nas</a>
-            <a href="szkolenia.html" class="topnav_a">Szkolenia</a>
-            <a href="kontakt.html" class="topnav_a">Kontakt</a>
+            <a href="{{ url_for('render_index') }}" class="topnav_a">Home</a>
+            <a href="{{ url_for('render_onas') }}" class="topnav_a">O nas</a>
+            <a href="{{ url_for('render_szkolenia') }}" class="topnav_a">Szkolenia</a>
+            <a href="{{ url_for('render_kontakt') }}" class="topnav_a">Kontakt</a>
             <a href="{{ url_for('render_logowanie') }}" class="topnav_a">Logowanie</a>
         </nav>
     </header>
@@ -65,18 +65,18 @@
         <div class="pages">
           <ul>
             <h3>23 Solutions</h3>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="onas.html">O nas</a></li>
-            <li><a href="szkolenia.html">Szkolenia</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-            <li><a href="logowanie.html">Logowanie</a></li>
+            <li><a href="{{ url_for('render_index') }}">Home</a></li>
+            <li><a href="{{ url_for('render_onas') }}">O nas</a></li>
+            <li><a href="{{ url_for('render_szkolenia') }}">Szkolenia</a></li>
+            <li><a href="{{ url_for('render_kontakt') }}">Kontakt</a></li>
+            <li><a href="{{ url_for('render_logowanie') }}">Logowanie</a></li>
           </ul>
           <ul>
             <h3>Najczęściej odwiedzane</h3>
-            <li><a href="onas.html">Poznaj nasz zespół</a></li>
-            <li><a href="szkolenie.html">Kalendarz dostępnych terminów</a></li>
-            <li><a href="szkolenia.html">Dostępne szkolenia</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="{{ url_for('render_onas') }}">Poznaj nasz zespół</a></li>
+            <li><a href="{{ url_for('render_szkolenie') }}">Kalendarz dostępnych terminów</a></li>
+            <li><a href="{{ url_for('render_szkolenia') }}">Dostępne szkolenia</a></li>
+            <li><a href="{{ url_for('render_kontakt') }}">Kontakt</a></li>
           </ul>
         </div>
         <div class="newsletter">
