@@ -45,6 +45,26 @@ function moveItem(direction) {
 }
 
 
+function checkPasswordMatch() {
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("repas").value;
+    var label = document.getElementById("error_label");
+
+    if (password !== confirmPassword) {
+        label.style.fontSize = "18px";
+        return false;
+    } else {
+        label.style.fontSize = "0px";
+        return true;
+    }
+}
+
+document.getElementById("register_form").addEventListener("submit", function(event) {
+    if (!checkPasswordMatch()) {
+        event.preventDefault();
+    }
+});
+
 window.addEventListener('resize', function() {
 var szerokoscEkranu = window.innerWidth;
 var obiekt = document.getElementById('myTopnav');

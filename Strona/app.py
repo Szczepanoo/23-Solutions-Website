@@ -31,8 +31,9 @@ def register():
     surname = request.form['surname']
     tel = request.form['tel']
     email = request.form['email']
-    pas = request.form['pas']
+    pas = request.form['password']
     sign_for_newsletter = 1 if request.form.get('sign_for_newsletter') else 0
+
 
     h_pas = bcrypt.hashpw(pas.encode('utf-8'), bcrypt.gensalt())
 
@@ -40,7 +41,7 @@ def register():
                    (name, surname,  email, tel, h_pas, sign_for_newsletter))
     conn.commit()
 
-    return 'Dziękujemy za rejestrację!'
+    return render_template('logowanie.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -546,7 +546,7 @@ h2 {
 .signup_form form{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 0px 1fr 1fr;
     width: 80%;
     margin: auto;
     row-gap: 30px;
@@ -559,6 +559,21 @@ h2 {
     font-size: 24px;
     border: 1px solid #0b5917;
     grid-column: 1;
+}
+
+.signup_form .repas{
+    height: 30px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.error_label{
+    display: grid;
+    height: 20px;
+    font-size: 0px;
+    color: #F62020;
+    text-align: center;
+    top: -10px;
 }
 
 .signup_form .acc_regulamin, .signup_form .acc_newsletter{

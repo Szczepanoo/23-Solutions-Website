@@ -32,7 +32,7 @@
 
     <section class="signup_form">
         <h2>Zarejestruj się</h2>
-        <form action="/register" method="POST">
+        <form action="/register" method="POST" onsubmit="checkPasswordMatch()" id="register_form">
             <input type="text" id="name" name="name" required placeholder="Imię">
 
             <input type="text" id="surname" name="surname" required placeholder="Nazwisko">
@@ -41,11 +41,13 @@
 
             <input type="email" id="email" name="email" required placeholder="E-mail">
 
-            <input type="password" id="password" name="password" required placeholder="Hasło" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&_]{8,}$"
+            <input type="password" id="password" name="password" required placeholder="Hasło" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&_])[A-Za-z\d@$!%*?&_]{8,}$"
            title="Hasło musi zawierać co najmniej 8 znaków, w tym co najmniej jedną małą i jedną wielką literę, jedną cyfrę oraz jeden znak specjalny." />
 
-            <input type="password" id="repas" name="repas" required placeholder="Powtórz hasło">
 
+
+            <input type="password" id="repas" name="repas" required placeholder="Powtórz hasło">
+            <label class="error_label" id="error_label">Hasła nie są indentyczne</label>
             <div class="accept-regulations">
                 <div class="acc_regulamin">
                     <input type="checkbox" id="accept" name="accept" required>
