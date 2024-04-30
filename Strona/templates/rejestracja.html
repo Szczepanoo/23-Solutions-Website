@@ -35,13 +35,14 @@
         <form action="/register" method="POST">
             <input type="text" id="name" name="name" required placeholder="Imię">
 
-            <input type="text" id="surname" name="name" required placeholder="Nazwisko">
+            <input type="text" id="surname" name="surname" required placeholder="Nazwisko">
 
             <input type="tel" id="tel" name="tel" required placeholder="Telefon" pattern="[0-9]{9}">
 
             <input type="email" id="email" name="email" required placeholder="E-mail">
 
-            <input type="password" id="pas" name="pas" required placeholder="Hasło">
+            <input type="password" id="password" name="password" required placeholder="Hasło" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&_]{8,}$"
+           title="Hasło musi zawierać co najmniej 8 znaków, w tym co najmniej jedną małą i jedną wielką literę, jedną cyfrę oraz jeden znak specjalny." />
 
             <input type="password" id="repas" name="repas" required placeholder="Powtórz hasło">
 
@@ -110,7 +111,7 @@
     </footer>
 
 
-    <script src="../script.js"></script>
+    <script src="../static/script.js"></script>
 
 </body>
 </html>

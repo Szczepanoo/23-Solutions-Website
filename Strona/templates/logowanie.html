@@ -17,7 +17,7 @@
         </div>
         <a href="javascript:void(0);" class="hamburger" onclick=showMenu("myTopnav")><i id="hamburger" class="fa fa-bars"></i></a>
         <nav class="topnav" id="myTopnav">
-            <a href="index.html" class="topnav_a">Home</a>
+            <a href="{{ url_for('render_index') }}" class="topnav_a">Home</a>
             <a href="onas.html" class="topnav_a">O nas</a>
             <a href="szkolenia.html" class="topnav_a">Szkolenia</a>
             <a href="kontakt.html" class="topnav_a">Kontakt</a>
@@ -42,7 +42,7 @@
 
 
             <a class="link1" href="#nie_pamietasz_hasla">Nie pamiętasz hasła?</a>
-            <a class="link2" href="rejestracja.html">Nie masz konta?</a>
+            <a class="link2" href="{{ url_for('render_rejestracja') }}">Nie masz konta?</a>
 
         </form>
     </section>
@@ -92,7 +92,7 @@
     </footer>
 
 
-    <script src="../script.js"></script>
+    <script src="../static/script.js"></script>
 
 </body>
 </html>

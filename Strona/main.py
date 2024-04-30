@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import mysql.connector
+import bcrypt
 
 app = Flask(__name__)
 
@@ -19,10 +20,13 @@ def render_index():
 def render_logowanie():
     return render_template('logowanie.html')
 
+@app.route('/rejestracja')
+def render_rejestracja():
+    return render_template('rejestracja.html')
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    # Odbierz dane z formularza
     name = request.form['name']
     surname = request.form['surname']
     tel = request.form['tel']
@@ -30,7 +34,10 @@ def register():
     pas = request.form['pas']
     sign_for_newsletter = 1 if request.form.get('sign_for_newsletter') else 0
 
-    cursor.execute("INSERT INTO users (name, surname, tel, email, password, newsletter) VALUES (%s, %s, %s, %s, %s)", (name, surname, tel, email, pas, sign_for_newsletter))
+    h_pas = bcrypt.hashpw(pas.encode('utf-8'), bcrypt.gensalt())
+
+    cursor.execute("INSERT INTO users (name, surname, mail, phone, password, newsletter) VALUES (%s, %s, %s, %s, %s, %s)",
+                   (name, surname,  email, tel, h_pas, sign_for_newsletter))
     conn.commit()
 
     return 'Dziękujemy za rejestrację!'
